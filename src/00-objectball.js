@@ -174,8 +174,8 @@ function playerNumbers(teamname){
     for (let one of keys){
         if (obj[one]["teamName"] === teamname){
             let pla = Object.keys(obj[one]["players"])
-               pla.map(function (two){
-                num.push(obj[one]["players"][two]["number"])
+             num =  pla.map(function (two){
+                return obj[one]["players"][two]["number"]
             })
             
         }
